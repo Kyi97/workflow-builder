@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body Styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f5f3;
+}
+
+/* Code Font Styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.default-bg {
+  @apply bg-white border-r border-gray-200 shadow-md;
+}
+
+/* Toast Component Styling */
+.toast-box {
+  @apply px-4 py-3 rounded border shadow-md;
+}
+
+.toast-success {
+  @apply bg-green-100 text-green-800 border-green-400;
+}
+
+.toast-error {
+  @apply bg-red-100 text-red-800 border-red-400;
+}
+
+.toast-warning {
+  @apply bg-yellow-100 text-yellow-800 border-yellow-400;
+}
+
+.toast-default {
+  @apply bg-gray-100 text-gray-800 border-gray-400;
+}
+
+/* Table Component Styling */
+.table-header {
+  @apply px-6 py-3 text-left text-black;
+}
+.table-cell {
+  @apply px-6 py-4 whitespace-nowrap border-b border-gray-200 leading-5 text-black;
+}
+
+/* Font Styling */
+
+.font-large {
+  @apply text-base font-semibold;
+}
+
+.font-medium {
+  @apply text-sm font-semibold;
+}
+
+.font-medium-gray {
+  @apply text-sm text-[#737373] font-normal;
+}
+
+.font-small {
+  @apply text-xs font-medium;
+}
